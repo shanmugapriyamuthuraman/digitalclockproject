@@ -1,0 +1,117 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing::border-box;
+}
+.container{
+	width:85%;
+}
+.box1{
+	background-color:black;
+	height:100vh;
+	width:70%;
+	margin:auto;
+	padding-top:4rem;
+	border-radius:5px;
+}
+.box2{
+	border:5px solid white;
+	/* height:90vh; */
+	width:85%;
+	margin:auto;
+}
+.box3{
+	
+	display:flex;
+	justify-content:space-around;
+}
+.box3 h1{
+	color:white;
+	padding:2rem;
+}
+#Date{
+	border:2px solid white;
+	width:90%;
+	height:20vh;
+	margin:auto;
+	display:flex;
+	justify-content:space-between;
+}
+#Date h1{
+	color:red;
+	font-size:6rem;
+	margin-left:2rem;
+}
+.box4{
+	display:flex;
+	justify-content:space-around;
+}
+.box4 h1{
+	color:white;
+	padding:2rem;
+}
+#time{
+	display:flex;
+	padding:1rem;
+	gap:10px;
+}
+#Day{
+	display:flex;
+	padding:1rem;
+	gap:10px;
+}
+#am{
+	border:2px solid white;
+	border-radius:50%;
+	width:3%;
+	height:3vh;
+}
+#pm{
+	border:2px solid white;
+	border-radius:50%;
+	width:3%;
+	height:3vh;
+}
+#sun{
+	border:2px solid white;
+	border-radius:50%;
+	width:3%;
+	height:3vh;
+	padding:0.2rem;
+}
+#mon{
+	border:2px solid white;
+	border-radius:50%;
+	width:3%;
+	height:3vh;
+}
+#tues{
+	border:2px solid white;
+	border-radius:50%;
+	width:3%;
+	height:3vh;
+}
+#wed{
+	border:2px solid white;
+	border-radius:50%;
+	width:3%;
+	height:3vh;
+}
+#thus{
+	border:2px solid white;
+	border-radius:50%;
+	width:3%;
+	height:3vh;
+}
+#fri{
+	border:2px solid white;
+	border-radius:50%;
+	width:3%;
+	height:3vh;
+}
+#sat{
+	border:2px solid white;
+	border-radius:50%;
+	width:3%;
+	height:3vh;
+}
