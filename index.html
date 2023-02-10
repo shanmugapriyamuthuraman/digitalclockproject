@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="box1">
+			<div class="box2">
+			<div class="box3">
+				<h1>DATE</h1>
+				<h1>MONTH</h1>
+				<h1>YEAR</h1>
+			</div>
+			<div id="Date">
+				<h1 id="date"></h1>
+				<h1 id="Month"></h1>
+				<h1 id="Year"></h1>
+			</div>
+			<div class="box3">
+				<h1>HOURS</h1>
+				<h1>MINITUES</h1>
+				<h1>SECONDS</h1>
+			</div>
+			<div id="Date">
+				<h1 id="hours"></h1>
+				<h1 id="minute"></h1>
+				<h1 id="second"></h1>
+			</div>
+			<div id="time">
+				<div id="am">
+				</div>
+				<span style="color:white">pm</span>
+				<div id="pm"> 
+				</div>
+				<span style="color:white">am</span>
+				
+			</div>
+			<div id="Day">
+				<div id="sun">
+				</div>
+				<span style="color:white">sun</span>
+				<div id="mon"> 
+				</div>
+				<span style="color:white">mon</span>
+				<div id="tues">
+				</div>
+				<span style="color:white">tues</span>
+				<div id="wed">
+				</div>
+				<span style="color:white">wed</span>
+				<div id="thus">
+				</div>
+				<span style="color:white">thus</span>
+				<div id="fri">
+				</div>
+				<span style="color:white">fri</span>
+				<div id="sat">
+				</div>
+				<span style="color:white">sat</span>
+			</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	<script>
+		const date=new Date()
+		date1=date.getDate();
+		document.getElementById("date").innerHTML=date1
+		Month=date.getMonth();
+		document.getElementById("Month").innerHTML=Month+1
+		Year=date.getFullYear();
+		document.getElementById("Year").innerHTML=Year
+		Hours=date.getHours();
+		document.getElementById("hours").innerHTML=Hours
+		Minute=date.getMinutes();
+		document.getElementById("minute").innerHTML=Minute
+		Second=date.getSeconds();
+		document.getElementById("second").innerHTML=Second
+		Day=date.getDay();
+		console.log(Day)
+		if(Hours<=12){
+			var evening= document.getElementById("pm");
+			evening.style.backgroundColor="red";
+		}
+		else{
+			var morning=document.getElementById("am");
+			morning.style.backgroundColor="red";
+		}
+		if(Day==0) {
+			var day1=document.getElementById("sun");
+			day1.style.backgroundColor="red";
+			}
+			
+			else if((Day==1)){
+			var day2=document.getElementById("mon");
+			day2.style.backgroundColor="red";
+			}
+			else if((Day==2)){
+			var day3=document.getElementById("tues");
+			day3.style.backgroundColor="red";
+			}
+			else if((Day==3)){
+			var day4=document.getElementById("wed");
+			day4.style.backgroundColor="red";
+			}
+			else if((Day==4)){
+			var day5=document.getElementById("thus");
+			day5.style.backgroundColor="red";
+			}
+			else if((Day==5)){
+			var day6=document.getElementById("fri");
+			day6.style.backgroundColor="red";
+			}
+			else if((Day==6)){
+			var day7=document.getElementById("sat");
+			day7.style.backgroundColor="red";
+		}
+	</script>
+</body>
+</html>	
